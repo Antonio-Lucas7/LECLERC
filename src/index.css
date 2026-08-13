@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #181615;
+    background-color: #FAF7F2;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Luxury Animations & Aesthetics */
+.editorial-border {
+  border: 1px solid rgba(18, 16, 15, 0.08);
+}
+
+.editorial-shadow {
+  box-shadow: 0 16px 40px -15px rgba(24, 22, 21, 0.06);
+}
+
+.gold-border-glow {
+  border-color: rgba(197, 160, 89, 0.3);
+}
+
+/* Glassmorphism Header */
+.glass-header {
+  background: rgba(250, 247, 242, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D5C4AF;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C5AF97;
+}
+
+/* Image Zoom Effect */
+.img-zoom-container {
+  overflow: hidden;
+}
+
+.img-zoom-container img {
+  transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1), filter 0.5s ease;
+}
+
+.img-zoom-container:hover img {
+  transform: scale(1.04);
+}
